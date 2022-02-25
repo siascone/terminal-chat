@@ -21,7 +21,7 @@ To run the program:
 - python-socketio - Socket.IO clients/servers implemented for python
 - asyncio - provides ability to run concurrent code via async/await
 - aiohttp - provides an asynchronous HTTP client/server for asyncio and Python
-- ainput - 
+- ainput - provides asynchronous input retrieval from client
 
 ---
 
