@@ -18,7 +18,7 @@ async def join_chat_room(sid, message):
 
     # notify other users in chat of new user joining
     new_user_joined = username + ' has joined the chat!'
-    await server_socket.emit('receive_message', {'message': new_user_joined, 'from': 'TerminalChat', 'name': username})
+    await server_socket.emit('receive_message', {'message': new_user_joined, 'from': 'TerminalChat', 'username': username})
 
 @server_socket.event
 async def leave_chat_room(sid, message):
@@ -27,7 +27,7 @@ async def leave_chat_room(sid, message):
 # send message to clients in chat
 @server_socket.event
 async def sent_to_clients_in_chat(sid, message):
-    await server_socket.emit('receive_message', {'message': message['message'], 'from': message['username'], 'username]': ''}, room=message['chat_room'])
+    await server_socket.emit('receive_message', {'message': message['message'], 'from': message['username'], 'username': ''}, room=message['room_name'])
 
 # handle new sockets connecting to server_socket
 @server_socket.event
@@ -39,7 +39,7 @@ async def disconnect(sid, message):
     # grab username and make leave message to send to users still in chat
     username = message['username']
     user_left = username + ' has left the chat.'
-    await server_socket.emit('receive_message', {'message': user_left, 'from': 'TerminalChat', 'name': username})
+    await server_socket.emit('receive_message', {'message': user_left, 'from': 'TerminalChat', 'username': username})
     print(message['username'] + ' disconnnected')
 
 @server_socket.event
