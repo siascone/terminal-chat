@@ -40,7 +40,7 @@ endpoints in a communication between networked programs. I also got a bit of
 exposure to buffering messages in order to prevent/preempt any data transfer that is 
 too large from causing any issues.
 
-### A deeper dive and look into socketio
+### A deeper dive and look into python-socketio
 Following the completion of the above mentioned walkthroughs I dove into the docs 
 on [python-socketio](https://python-socketio.readthedocs.io/en/latest/) after 
 which I found another useful tutorial by user Dhanush on dev.to:
