@@ -47,6 +47,28 @@ class Client:
                     print(f"You: {message['message']}")
                 else:
                     print(f"{sender}: {message['message']}")
+            # notify new user of clients in chat
+            if message['clients'] and username == message['username']:
+                    print(f"Current members of this chat: {client_list(self, message['clients'])}")
+
+        # build current client list
+        def client_list(self, clients):
+            list_of_clients = ''
+            clients_names = list(clients.values())
+            i = 0
+            while i < len(clients_names):
+                if i == (len(clients_names) - 1) and (len(clients_names) != 1):
+                    list_of_clients += f' and {clients_names[i]}'
+                elif len(clients_names) == 1:
+                    list_of_clients += f'{clients_names[i]}'
+                elif i != 0:
+                    list_of_clients += f', {clients_names[i]}'
+                else:
+                    list_of_clients += f'{clients_names[i]}'
+                i += 1 
+                   
+            return list_of_clients
+
 
         # handle sending of messages to server/other clients
         async def send_message():
@@ -76,4 +98,4 @@ class Client:
         except:
             # future improvment, boradcast to other in chat that clinet has left
             # future improvement, exicute system exit without error message
-            print('Goodbye! Press Ctrl+c to exit.')
+            print('Goodbye!')
