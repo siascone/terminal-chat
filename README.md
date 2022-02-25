@@ -1,5 +1,10 @@
 # TerminalChat
 TerminalChat is a simple group chat program for your terminal(command prompt). 
+
+<!-- <img href='./assets/terminal_chat_screenshot.png' height='500px' width='800px'/> -->
+
+<!-- ![terminal_chat_screen_shot](./assets/terminal_chat_screenshot.png) -->
+
 With TerminalChat you will:
 - be able to join the chat with a chosen username
 - be provided a list of current members in the chat upon "login"
@@ -13,7 +18,7 @@ To run the program:
 3. cd into the project's root directory in each open terminal(command prompt)
 4. in one terminal run start the server by running `python3 server.py`
 5. in all other terminals run `python3 join_chat.py` and enter a username
- 
+
 ---
 
 ## Technologies/Libraries utilized in current iteration
