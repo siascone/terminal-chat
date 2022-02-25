@@ -27,11 +27,11 @@ class Client:
             print('Connected to TerminalChat')
             await client_socket.emit('join_chat_room', {'room': room, 'username': username})
 
-        # handle close of server
-        @client_socket.event
-        def disconnect():
-            # future improvement, exicute system exit without error message
-            print('Goodbye! Press Ctrl+c to exit.')
+        # # handle close of server
+        # @client_socket.event
+        # def disconnect():
+        #     # future improvement, exicute system exit without error message
+        #     print('Goodbye! Press Ctrl+c to exit.')
 
         # handle client receivng messages from server/other chat members
         @client_socket.event
