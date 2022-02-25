@@ -1,7 +1,7 @@
 # TerminalChat
 TerminalChat is a simple group chat program for your terminal(command prompt). 
 
-<!-- <img href='./assets/terminal_chat_screenshot.png' height='500px' width='800px'/> -->
+<img href='https://github.com/siascone/terminal-chat/blob/main/assets/terminal_chat_screenshot.png' height='500px' width='800px'/>
 
 <!-- ![terminal_chat_screen_shot](./assets/terminal_chat_screenshot.png) -->
 
