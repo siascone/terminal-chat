@@ -1,9 +1,7 @@
 # TerminalChat
 TerminalChat is a simple group chat program for your terminal(command prompt). 
 
-<img src='https://github.com/siascone/terminal-chat/blob/main/assets/terminal_chat_screenshot.png'/>
-
-<!-- ![terminal_chat_screen_shot](./assets/terminal_chat_screenshot.png) -->
+![terminal_chat_screen_shot](./assets/terminal_chat_screenshot.png)
 
 With TerminalChat you will:
 - be able to join the chat with a chosen username
