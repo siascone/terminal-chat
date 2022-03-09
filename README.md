@@ -47,7 +47,7 @@ which I found another useful tutorial by user Dhanush on dev.to:
 - [Build a terminal ChatApp using python](https://dev.to/imdhanush/build-a-terminal-chatapp-using-python-2392) by Dhanush
 
 From this tutorial I was able to expand on the concepts demonstrated and turn the 
-client.py file from a static client socket with a predefined into a Client class 
+client.py file from a static client socket with a predefined username into a Client class 
 that can accept a username and join a server when prompted by a user. 
 
 ### Additional research/tutorials
